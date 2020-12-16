@@ -9,13 +9,16 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
 
 function App() {
+  const hist = createBrowserHistory();
   return (
-    <Router basename="routing-react-site">
+    <Router basename="routing-react-site" history={hist}>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
-        <a class="navbar-brand" href="/">Routing react app</a>
+        <a class="navbar-brand" href="/routing-react-site/">React SPA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
