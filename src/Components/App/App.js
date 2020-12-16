@@ -12,7 +12,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename="routing-react-site">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="/">Routing react app</a>
@@ -33,8 +33,8 @@ function App() {
     </nav>
 
     <Switch>
-      <Route exact path="/routing-react-site/" component={Page1}/>
-      <Route path="/routing-react-site/about" component={Page2}/>
+      <Route exact path="/" component={Page1}/>
+      <Route path="/about" component={Page2}/>
     </Switch>
   </Router>
   );
