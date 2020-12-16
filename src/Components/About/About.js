@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <a class="nav-link" href="/about">About</a>
+    <a class="nav-link" href="/routing-react-site/about">About</a>
   );
 }
 
