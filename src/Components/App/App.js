@@ -5,7 +5,7 @@ import Home from '../Home/';
 import Page1 from '../Page1/';
 import Page2 from '../Page2/';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -33,8 +33,8 @@ function App() {
     </nav>
 
     <Switch>
-      <Route exact path="/" component={Page1}/>
-      <Route path="/about" component={Page2}/>
+      <Route exact path="/routing-react-site/" component={Page1}/>
+      <Route path="/routing-react-site/about" component={Page2}/>
     </Switch>
   </Router>
   );
